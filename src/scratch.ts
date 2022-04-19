@@ -79,7 +79,8 @@ type Corner = `${'top' | 'bottom'}-${'left' | 'right'}`;
 
 // TS-Expect-Error and TS-Ignore
 
-type Bar = number & any;
+// type Bar = number & any;
+type Bar = number;
 
 // @ts-expect-error
 const num1: Bar = 'hello';
